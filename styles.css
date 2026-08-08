@@ -140,3 +140,35 @@ footer a{color:var(--gold-soft);font-weight:800}
 .map-note{margin-top:1rem;padding:1rem;border-radius:12px;background:#25493d;border-left:4px solid var(--gold);color:#e4eee8}
 @media(min-width:901px){.floor-heading>span{display:none}}
 @media(max-width:600px){.floor-card{padding:.75rem}.floor-heading p{display:none}.map-legend{font-size:.74rem}.floor-map{transform-origin:top left}.map-scroll{margin-right:-.25rem}}
+
+
+/* Published convention map image */
+.convention-map-image{
+  margin:1.25rem 0 0;
+  padding:.75rem;
+  background:#0d2923;
+  border:1px solid #42685a;
+  border-radius:18px
+}
+.convention-map-image a{
+  display:block;
+  border-radius:12px;
+  overflow:hidden;
+  background:#061713
+}
+.convention-map-image img{
+  display:block;
+  width:100%;
+  height:auto
+}
+.convention-map-image figcaption{
+  margin:.7rem .25rem 0;
+  color:var(--gold-soft);
+  font-size:.84rem;
+  font-weight:800;
+  text-align:center
+}
+@media(max-width:600px){
+  .convention-map-image{padding:.4rem;border-radius:12px}
+  .convention-map-image figcaption{font-size:.78rem}
+}
