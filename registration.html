@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f35">
+  <meta name="description" content="A device-saved registration checklist for Anime Iowa 2027.">
+  <title>Registration Center | Anime Iowa HQ 2027</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="registration.js" defer></script>
+</head>
+<body class="registration-page">
+  <a class="skip-link" href="#main">Skip to registration details</a>
+  <header class="packing-hero">
+    <nav class="topbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">AI HQ <span>2027</span></a>
+      <div class="nav-links"><a href="index.html">Home</a><a href="packing.html">Packing</a><a href="index.html#map">Map</a></div>
+    </nav>
+    <div class="packing-title">
+      <p class="eyebrow">Sponsor badge ready</p>
+      <h1>🎟️ Registration Center</h1>
+      <p>Your quick phone reference for badge pickup. Checklist changes stay in this browser on this device.</p>
+    </div>
+  </header>
+
+  <main id="main" class="packing-main registration-main">
+    <section class="panel registration-pass" aria-labelledby="badge-title">
+      <div class="pass-top">
+        <div><p class="section-label">Anime Iowa 2027</p><h2 id="badge-title">Sponsor Weekend Badge</h2></div>
+        <span class="paid-stamp">Paid</span>
+      </div>
+      <div class="badge-name">Spika</div>
+      <dl class="registration-facts">
+        <div><dt>Badge</dt><dd>#173</dd></div>
+        <div><dt>Type</dt><dd>Sponsor 18+ Weekend</dd></div>
+        <div><dt>Days</dt><dd>Day 1 · Day 2 · Day 3</dd></div>
+        <div><dt>Status</dt><dd>Preregistered</dd></div>
+      </dl>
+    </section>
+
+    <section class="panel receipt-card" aria-labelledby="receipt-title">
+      <div class="section-heading">
+        <div><p class="section-label">Payment summary</p><h2 id="receipt-title">Receipt #1372618</h2></div>
+        <span class="status growing">Paid Aug. 2, 2026</span>
+      </div>
+      <dl class="receipt-lines">
+        <div><dt>Sponsor badge</dt><dd>$125.00</dd></div>
+        <div><dt>Convenience fee</dt><dd>$8.97</dd></div>
+        <div class="receipt-total"><dt>Total paid</dt><dd>$133.97</dd></div>
+      </dl>
+      <div class="deadline-note"><strong>Refund deadline:</strong> June 30, 2027 at 11:59 PM Central. Convenience fees are non-refundable.</div>
+    </section>
+
+    <section class="panel pickup-card" aria-labelledby="pickup-title">
+      <p class="section-label">Expected pickup</p>
+      <h2 id="pickup-title">Thursday, July 29, 2027</h2>
+      <p><strong>Approximately 5:00–8:00 PM</strong> at the Sponsor window near the Marketplace.</p>
+      <p class="muted-copy">The 2027 time and location are not confirmed yet. Bring a government-issued photo ID.</p>
+    </section>
+
+    <section class="panel registration-checklist" aria-labelledby="checklist-title">
+      <div class="section-heading">
+        <div><p class="section-label">Ready for check-in</p><h2 id="checklist-title">Pickup Checklist</h2></div>
+        <strong id="registration-progress">0 of 7</strong>
+      </div>
+      <ul id="registration-list">
+        <li><label><input type="checkbox" data-key="photo-id"><span>Photo ID packed</span></label></li>
+        <li><label><input type="checkbox" data-key="confirmation"><span>Confirmation email saved on phone</span></label></li>
+        <li><label><input type="checkbox" data-key="qr-ready"><span>Registration QR code ready</span></label></li>
+        <li><label><input type="checkbox" data-key="hours-confirmed"><span>2027 Sponsor pickup hours confirmed</span></label></li>
+        <li><label><input type="checkbox" data-key="badge-picked-up"><span>Badge picked up</span></label></li>
+        <li><label><input type="checkbox" data-key="pin-received"><span>Sponsor pin received</span></label></li>
+        <li><label><input type="checkbox" data-key="recharge-found"><span>Recharge Room location confirmed</span></label></li>
+      </ul>
+      <p class="save-note" id="registration-save" aria-live="polite">✓ Checklist saves automatically on this device</p>
+    </section>
+
+    <section class="panel privacy-card" aria-labelledby="privacy-title">
+      <div><h2 id="privacy-title">Keep the confirmation handy</h2><p>The QR code, email address, phone number, birth date, and payment details are not stored on this public website. Keep the original confirmation email available at registration.</p></div>
+      <button id="reset-registration" class="danger-button" type="button">Reset checklist</button>
+    </section>
+  </main>
+
+  <footer><p>Anime Iowa HQ 2027 · Checklist data is stored only on your device.</p><a href="index.html">← Back to the homepage</a></footer>
+</body>
+</html>
