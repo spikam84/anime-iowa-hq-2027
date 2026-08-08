@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f35">
+  <meta name="description" content="A private, device-saved packing checklist for Anime Iowa 2027.">
+  <title>Packing Center | Anime Iowa HQ 2027</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="packing.js" defer></script>
+</head>
+<body class="packing-page">
+  <a class="skip-link" href="#main">Skip to checklist</a>
+  <header class="packing-hero">
+    <nav class="topbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">AI HQ <span>2027</span></a>
+      <div class="nav-links"><a href="index.html">Home</a><a href="index.html#plan">Planning</a><a href="index.html#map">Map</a></div>
+    </nav>
+    <div class="packing-title">
+      <p class="eyebrow">Get ready for Anime Valley</p>
+      <h1>🎒 Packing Center</h1>
+      <p>Check things off as you pack. Your progress stays only in this browser on this device.</p>
+    </div>
+  </header>
+
+  <main id="main" class="packing-main">
+    <section class="panel progress-panel" aria-labelledby="progress-title">
+      <div class="progress-copy"><div><p class="section-label">Packing progress</p><h2 id="progress-title"><span id="packed-count">0</span> of <span id="total-count">0</span> packed</h2></div><strong id="progress-percent">0%</strong></div>
+      <div class="progress-track" role="progressbar" aria-label="Packing progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progress-fill"></span></div>
+      <p class="save-note" id="save-status" aria-live="polite">✓ Progress saves automatically</p>
+    </section>
+
+    <div id="packing-categories" class="packing-grid" aria-label="Packing checklist categories"></div>
+
+    <section class="panel custom-panel" aria-labelledby="custom-title">
+      <div><p class="section-label">Make it yours</p><h2 id="custom-title">Add a Custom Item</h2></div>
+      <form id="custom-form" class="add-item-form">
+        <label><span>Item</span><input id="custom-item" maxlength="80" placeholder="Example: green wig" required></label>
+        <label><span>Category</span><select id="custom-category"></select></label>
+        <button type="submit">Add to checklist</button>
+      </form>
+    </section>
+
+    <section class="panel shopping-panel" aria-labelledby="shopping-title">
+      <div class="section-heading"><div><p class="section-label">Before the convention</p><h2 id="shopping-title">Still Need to Buy</h2></div><span class="status growing" id="shopping-count">0 items</span></div>
+      <form id="shopping-form" class="shopping-form"><label class="sr-only" for="shopping-item">Item to buy</label><input id="shopping-item" maxlength="80" placeholder="Add something to buy…" required><button type="submit">Add</button></form>
+      <ul id="shopping-list" class="shopping-list"></ul>
+      <p id="empty-shopping" class="empty-state">Nothing on the shopping list yet.</p>
+    </section>
+
+    <section class="panel reset-panel" aria-labelledby="reset-title">
+      <div><h2 id="reset-title">Start Fresh</h2><p>Clear every checkmark and remove your custom items and shopping list.</p></div>
+      <button id="reset-all" class="danger-button" type="button">Reset packing center</button>
+    </section>
+  </main>
+  <footer><p>Anime Iowa HQ 2027 · Packing data is stored only on your device.</p><a href="index.html">← Back to the homepage</a></footer>
+</body>
+</html>
